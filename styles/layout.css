@@ -1,0 +1,82 @@
+:root {
+  --slidev-slide-container-background: transparent;
+  --slidev-code-font-size: 18px;
+}
+
+.slidev-layout {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
+
+  h1 {
+    position: relative;
+    width: fit-content;
+    font-family: 'Sandler Trial';
+    font-size: 60px !important;
+    line-height: 1.2 !important;
+  }
+
+  h1:before {
+    view-transition-name: focus;
+    content: '';
+    background: #f141a8;
+    display: block;
+    position: absolute;
+    width: calc(100%);
+    height: 20px;
+    margin-left: -0.25em;
+    bottom: -3px;
+    z-index: -1;
+    transform: rotate(-1deg);
+  }
+
+  h2 {
+    @apply text-8xl;
+  }
+
+  blockquote {
+    font-size: 3rem;
+    line-height: 1.2;
+    border-left: none;
+    position: relative;
+    border-radius: 0;
+
+    &:before {
+      content: '';
+      view-transition-name: focus;
+      background: #f141a8;
+      display: block;
+      position: absolute;
+      width: 10px;
+      left: -10px;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+    }
+    p {
+      line-height: inherit;
+    }
+  }
+
+.slidev-code-wrapper{
+    position: relative;
+    border-radius: 0;
+
+    &:before {
+      content: '';
+      view-transition-name: focus;
+      background: #f141a8;
+      display: block;
+      position: absolute;
+      width: 10px;
+      left: -10px;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+  }
+}
