@@ -1,9 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-neue?styles=17621');
+@import url('https://fonts.cdnfonts.com/css/sandler-trial');
 :root {
   --slidev-slide-container-background: transparent;
   --slidev-code-font-size: 18px;
+
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #1b2b34;
+
+  /* Custom colors*/
+  --slidev-theme-color: #f3eff5;
+
+  /* Code colors */
+  --slidev-theme-code-background: #0f131e;
+  --slidev-theme-code-border: #242d34;
+
+  /* Accent colors */
+  --slidev-theme-accents-rose: #f141a8;
+  --slidev-theme-accents-teal: #99c693;
+  --slidev-theme-accents-yellow: #fac762;
+  --slidev-theme-accents-red: #eb5e66;
+  --slidev-theme-accents-lightblue: #5fb2b2;
+  --slidev-theme-accents-blue: #6698cb;
+  --slidev-theme-accents-vulcan: #0e131f;
+
+  /*  Default */
+  --slidev-theme-default-headingBg: var(--slidev-theme-accents-yellow);
+  --slidev-theme-default-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-default-background: var(--slidev-theme-background);
+
+  /*  Center */
+  --slidev-theme-center-headingBg: var(--slidev-theme-accents-blue);
+  --slidev-theme-center-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-center-background: var(--slidev-theme-background);
+
+  /*  Cover */
+  --slidev-theme-cover-headingBg: var(--slidev-theme-accents-teal);
+  --slidev-theme-cover-headingColor: var(--slidev-theme-accents-vulcan);
+  /* --slidev-theme-cover-background: var(--slidev-theme-background); */
+
+  /*  Section */
+  --slidev-theme-section-headingBg: var(--slidev-theme-accents-lightblue);
+  --slidev-theme-section-headingColor: var(--slidev-theme-accents-vulcan);
+  --slidev-theme-section-background: var(--slidev-theme-background);
+
+  /*  About me */
+  --slidev-theme-aboutme-bg: var(--slidev-theme-color);
+  --slidev-theme-aboutme-color: var(--slidev-theme-background);
+  --slidev-theme-aboutme-helloBg: var(--slidev-theme-accents-yellow);
+  --slidev-theme-aboutme-helloColor: var(--slidev-theme-background);
+  --slidev-theme-aboutme-nameColor: var(--slidev-theme-accents-red);
+
+  --slidev-theme-background: var(--slidev-theme-primary);
+  --slidev-slide-container-background: var(--slidev-theme-primary);
+}
+
+::view-transition-group(*) {
+  animation-duration: 500ms;
 }
 
 .slidev-layout {
+  background-color: var(--slidev-theme-background);
+  /* color: var(--slidev-theme-color); */
+
   .wrapper {
     width: 100%;
     height: 100%;
@@ -12,17 +71,19 @@
   }
 
   h1 {
-    position: relative;
     width: fit-content;
     font-family: 'Sandler Trial';
-    font-size: 60px !important;
     line-height: 1.2 !important;
+    @apply text-7xl;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
   }
 
-  h1:before {
+  h1:after {
     view-transition-name: focus;
     content: '';
-    background: #f141a8;
+    background: var(--slidev-theme-accents-rose);
     display: block;
     position: absolute;
     width: calc(100%);
@@ -34,15 +95,49 @@
   }
 
   h2 {
-    @apply text-8xl;
+    font-family: 'Bebas Neue';
+    @apply text-6xl mb4;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+  }
+
+  h2:not(.solo):after {
+    view-transition-name: focus;
+    content: '';
+    background: var(--slidev-theme-accents-rose);
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: calc(90%);
+    margin-left: -0.25em;
+    top: 0px;
+    z-index: -1;
+  }
+
+  h3 {
+    font-family: 'Bebas Neue';
+    @apply text-4xl;
+  }
+
+  h4 {
+    font-family: 'Bebas Neue';
+    @apply text-xl;
+  }
+
+  h5 {
+    font-family: 'Bebas Neue';
+    @apply text-base;
   }
 
   blockquote {
+    font-family: 'Bebas Neue';
     font-size: 3rem;
     line-height: 1.2;
     border-left: none;
-    position: relative;
     border-radius: 0;
+    position: relative;
+    z-index: 1;
 
     &:before {
       content: '';
@@ -57,12 +152,24 @@
       z-index: -1;
     }
     p {
+      font-family: 'Bebas Neue';
       line-height: inherit;
     }
   }
+  p {
+    width: fit-content;
+  }
+  a {
+    width: fit-content;
+    &:hover {
+      color: unset;
+      border-color: var(--slidev-theme-accents-rose);
+    }
+  }
 
-.slidev-code-wrapper{
+  .slidev-code-wrapper {
     position: relative;
+    z-index: 1;
     border-radius: 0;
 
     &:before {
@@ -77,6 +184,55 @@
       top: 0;
       z-index: -1;
     }
+  }
 
+  /* .default { */
+  /*   --b */
+  /* } */
+
+  .poster {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .blob {
+    overflow: visible;
+    animation: transform 12s ease-in-out infinite both alternate;
+  }
+}
+
+.slidev-layout.two-columns {
+  .col-left,
+  .col-right {
+    /* display: grid !important; */
+    place-content: center !important;
+  }
+}
+.slidev-code {
+  .slidev-code-dishonored {
+    filter: blur(3px);
+  }
+}
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 40% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 35% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 26%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 73%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 51% 51% 49% 59%;
   }
 }
