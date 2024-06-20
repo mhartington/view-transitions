@@ -11,6 +11,12 @@ layout: default
 <div class="blob" style="view-transition-name: focus; width: 200px; height: 200px; border-radius: 50%; background: #F141A8; "></div>
 
 ---
+layout: image
+image: /imgs/kcdc24_sponsorslide.jpeg
+backgroundSize: contain
+---
+
+---
 
 <div style=" opacity: 0; view-transition-name: focus; width: 100%; height: 100%; background: #F141A8; "></div>
     <img src="https://i.ytimg.com/vi/Gig__fCAIps/maxresdefault.jpg" alt="">
@@ -449,7 +455,17 @@ backgroundSize: contain
 
 ---
 
-# fin
 
+<div class="blob" style="view-transition-name: focus; width: 200px; height: 200px; border-radius: 50%; background: #F141A8; position: absolute; place-self:center"></div>
 
+<h1 class="solo" style="text-align: center; width: center">fin</h1>
 
+<div style="position: absolute;align-self: end;">
+    <p>Feedback</p>
+    <img src="/imgs/SpeakerFeedbackQRCode.png" width="100"  alt="">
+</div>
+
+<div style="position: absolute; place-self: end;">
+    <p>Slides</p>
+    <img width="100"  src="/imgs/slides.png" alt="">
+</div>

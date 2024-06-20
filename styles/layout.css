@@ -80,7 +80,7 @@
     z-index: 1;
   }
 
-  h1:after {
+  h1:not(.solo):after {
     view-transition-name: focus;
     content: '';
     background: var(--slidev-theme-accents-rose);
