@@ -91,6 +91,11 @@ layout: tron
 <img class="poster" style="background: white; height: 80%; place-self: center;" src="https://media.tenor.com/ZNu5AVd29LEAAAAC/steve-ballmer-microsoft.gif" alt="" />
 </v-click>
 
+<v-click>
+<img class="poster" style="height: 80%; place-self: center;" src="/imgs/charlie.webp" alt="" />
+</v-click>
+
+
 ---
 
 ```html {all|2|3-6|4|5}
@@ -222,6 +227,8 @@ layout: two-cols
 </h2>
 
 ---
+layout: grid
+---
 
 # View Transitions
 
@@ -290,10 +297,10 @@ layout: two-cols
 
 ::right::
 
-<li>Item Title ⭐️</li>
-<li>Item Title ⭐️</li>
-<li v-click.hide="1">Item Title ⭐️</li>
-<li>Item Title ⭐️</li>
+<li class="list-item-1"> Item Title ⭐️</li>
+<li class="list-item-2"> Item Title ⭐️</li>
+<li class="list-item-3" v-click.hide="1">Item Title ⭐️</li>
+<li class="list-item-4"> Item Title ⭐️</li>
 
 
 ---
@@ -431,8 +438,18 @@ backgroundSize: contain
 
 # Demo Time!
 
+<img src="imgs/ng-morph.png" width="150" style="place-self: center" alt="" />
+
 [github.com/mhartington/ng-morph](https://github.com/mhartington/ng-morph)
 
+---
+
+# Another one
+
+<img src="imgs/ng-spotify.png" width="150" style="place-self: center" alt="" />
+
+
+[github.com/mhartington/ng-spotify](https://github.com/mhartington/ng-spotify)
 ---
 
 ## Wrapping up
@@ -445,9 +462,11 @@ backgroundSize: contain
 
 ---
 
-- Scroll Progress Timelines
-- View Progress Timelines
-- Transition Behavior
+### Scroll Progress Timelines
+
+### View Progress Timelines
+
+### Transition Behavior
 
 ---
 

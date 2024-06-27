@@ -206,11 +206,20 @@
   }
 }
 
+
 .slidev-layout.two-columns {
   .col-left,
   .col-right {
-    /* display: grid !important; */
     place-content: center !important;
+  }
+
+  .list-item-1 { view-transition-name: list-item-1}
+  .list-item-2 { view-transition-name: list-item-2}
+  .list-item-3 { view-transition-name: list-item-3}
+  .list-item-4 { view-transition-name: list-item-4}
+
+  .list-item-3.slidev-vclick-hidden {
+    display: none !important;
   }
 }
 .slidev-code {
