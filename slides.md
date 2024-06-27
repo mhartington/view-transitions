@@ -438,7 +438,7 @@ backgroundSize: contain
 
 # Demo Time!
 
-<img src="imgs/ng-morph.png" width="150" style="place-self: center" alt="" />
+<img src="/imgs/ng-morph.png" width="150" style="place-self: center" alt="" />
 
 [github.com/mhartington/ng-morph](https://github.com/mhartington/ng-morph)
 
@@ -446,7 +446,7 @@ backgroundSize: contain
 
 # Another one
 
-<img src="imgs/ng-spotify.png" width="150" style="place-self: center" alt="" />
+<img src="/imgs/ng-spotify.png" width="150" style="place-self: center" alt="" />
 
 
 [github.com/mhartington/ng-spotify](https://github.com/mhartington/ng-spotify)
