@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Making A Splash With View Transitions
+title: Simplified Animations on the Web
 class: text-center
 highlighter: shiki
 transition: view-transition
