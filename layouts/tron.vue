@@ -48,7 +48,7 @@ const style = computed(() => props);
     -1px -1px;
   transform: rotateX(85deg);
   animation: planeMoveTop 2s infinite linear;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .bottom-plane {
