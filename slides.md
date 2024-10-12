@@ -338,7 +338,7 @@ layout: two-cols
 
 ---
 
-## Cool, what about more advanced use cases?
+## Cool, what about more <br/> advanced use cases?
 
 ---
 
