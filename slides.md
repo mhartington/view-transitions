@@ -40,11 +40,7 @@ placeContent: "center left"
 ---
 
 
-<div style="
-    position:absolute;
-        place-self:center;
-    opacity: 0;
-view-transition-name: focus; width: 200px; height: 200px; border-radius: 50%; background: #F141A8; "></div>
+<div style="position:absolute; place-self:center; opacity: 0; view-transition-name: focus; width: 200px; height: 200px; border-radius: 50%; background: #F141A8; "></div>
 <h2 class="solo">?</h2>
 
 
@@ -146,7 +142,7 @@ layout: two-cols
 
 ## Some downsides
 - Lack of catches/control
-- Lots of footguns
+- Lots of foot guns
 
 ---
 layout: gsap
@@ -210,7 +206,7 @@ layout: two-cols
 
 ## Some down sides
 - Web Animations can get gnarly
-- If you animate the wrong thing, performance isues
+- If you animate the wrong thing, performance issues
 - Coordination can be a pain
 
 ---
@@ -451,7 +447,7 @@ backgroundSize: contain
 
 ## View Transitions are Awesome
 
-<v-click>Part of a whole suite of animations improvments</v-click>
+<v-click>Part of a whole suite of animations improvements</v-click>
 
 ---
 
