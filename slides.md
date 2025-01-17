@@ -37,11 +37,12 @@ placeContent: "center left"
 ---
 
 <h1>Simplified Animations <br/> on the Web</h1>
----
 
+<br/>
 
-<div style="position:absolute; place-self:center; opacity: 0; view-transition-name: focus; width: 200px; height: 200px; border-radius: 50%; background: #F141A8; "></div>
-<h2 class="solo">?</h2>
+Mike Hartington
+<br/>
+[🦋 mhartington.io](https://bsky.app/profile/mhartington.io)
 
 
 ---
@@ -87,13 +88,10 @@ layout: tron
 
 ---
 
-```html {all|2|3-6|4|5}
+```html
 <meta 
     http-equiv="Page-Enter" 
-    content="revealTrans(
-        Duration=**,
-        Transition=?
-    )"
+    content="revealTrans(Duration=**, Transition=?)"
 >
 ```
 
@@ -109,11 +107,6 @@ layout: tron
 | 3   | Circle from center outwards                         |
 | 4   | Horizontal wipe from bottom to top                  |
 | 5   | Horizontal wipe from top to bottom                  |
-
----
-
-## Circa 1999-2001
-It's _SO_ old though, I couldn't find videos
 
 ---
 layout: tron
@@ -153,7 +146,7 @@ layout: gsap
 layout: two-cols
 ---
 
-## JS Timelines
+## JavaScript Animations
 - Bringing some Flash to JS
 - GSAP is the most common
 - Older browser support
@@ -220,10 +213,6 @@ layout: grid
 ---
 
 # View Transitions
-
----
-
-### _What are they?_
 
 ---
 
@@ -334,10 +323,6 @@ layout: two-cols
 
 ---
 
-## Cool, what about more <br/> advanced use cases?
-
----
-
 ### Animating Display None
 
 ```css
@@ -373,7 +358,7 @@ backgroundSize: contain
 
 ---
 
-<video src="/videos/apple-music.mov" loop controls style="aspect-ratio: 23/16; width: 80%; align-self: center; margin: auto"></video>
+<video autoplay src="/videos/apple-music.mov" loop controls style="aspect-ratio: 23/16; width: 80%; align-self: center; margin: auto"></video>
 
 ---
 
@@ -415,7 +400,7 @@ backgroundSize: contain
 ---
 
 
-<video src="/videos/astro-demo-2.mov" loop controls style="aspect-ratio: 23/16; width: 80%; align-self: center; margin: auto"></video>
+<video autoplay src="/videos/astro-demo-2.mov" loop controls style="aspect-ratio: 23/16; width: 80%; align-self: center; margin: auto"></video>
 
 [github.com/Charca/view-transitions-live](https://github.com/Charca/view-transitions-live)
 
@@ -451,11 +436,15 @@ backgroundSize: contain
 
 ---
 
-### Scroll Progress Timelines
-
-### View Progress Timelines
-
+### Scroll Driven Animations
+### Animation Composition
 ### Transition Behavior
+
+---
+
+## Remember IE?
+
+[page-transitions.style](https://page-transitions.style/)
 
 ---
 
